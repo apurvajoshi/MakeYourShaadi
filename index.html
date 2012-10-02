@@ -2,70 +2,103 @@
 <html>
 <head>
 <title>Homepage - Make Your Shaadi</title>
-<link rel="stylesheet" href="css/bootstrap/css/bootstrap.css" />
-<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" />
-<link rel="stylesheet" href="css/bootstrap/css/bootstrap-responsive.css"/>
-<link rel="stylesheet" href="css/bootstrap/css/bootstrap-responsive.min.css"/>
-<link rel="stylesheet" href="css/stylesheet.css" />
-<style type="text/css">
-body,td,th {
-	font-family: Calibri;
-	font-size: 14px;
-}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+<link href="css/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+
+
+<style>
+      body {
+        padding-top: 80px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+</style>
+<style>
+		@font-face { font-family: SOUCISAN; src: url(images/SOUCISAN.TTF); } 
 </style>
 <meta charset="utf-8">
-	
-  	<style type="text/css">
-  	body {
-	background-image: url(images/background1.jpg);
-}
-    </style>
-
 </head>
 <body>
-	<header align="center">
-        <table width="64%" align="center">
-              <tr>
-                <td align="left" height="60px" valign="top">
-                    <figure>
-                        <img src="images/logo1.png">
-                    </figure>
-                </td>          
-              </tr>
-        </table>
-    </header>
-	<div align="center" style="margin-top:380px;margin-left:50px;height:155px;width:50%;" vertical-align:top">
+	<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" style="color:#FFFFFF; font-family: SOUCISAN;" href="#">Make Your Shaadi</a>
+          <div class="nav-collapse collapse pull-right" style="margin-top:12px">
+          		<button type="button" class="btn" data-toggle="modal" data-target="#login">Log In</button>
+                &nbsp;&nbsp;
+                <button type="button" class="btn" data-toggle="modal" data-target="#myModal">Sign Up</button>
+          </div>
+       </div>
+      </div>
+    </div>
+    		<div class="modal hide fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3>Log in to Make Your Shaadi</h3>
+              </div>
+              <div class="modal-body">
+						<form class="form-horizontal">
+                          <div class="control-group">                            
+                            <div class="controls">
+                              <input type="text" id="inputEmail" placeholder="Email">
+                            </div>
+                          </div>
+                          <div class="control-group">
+                            <div class="controls">
+                              <input type="password" id="inputPassword" placeholder="Password">
+                            </div>
+                          </div>
+                          <div class="control-group">
+                            <div class="controls">
+                              <label class="checkbox">
+                                <input type="checkbox"> Remember me
+                              </label>
+                              <button type="submit" class="btn btn-primary">Log in</button>
+                            </div>
+                          </div>
+                        </form>
+              </div>                  
+		   </div>
+        
+        
+           <div class="modal hide fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h3>Sign up for Make Your Shaadi</h3>
+                      </div>
+              <div class="modal-body">
+              			<div class="span3 offset1">
+	                        <button type="submit" class="btn btn-primary">Connect through Facebook</button>
+                        </div>
+                        <div class="span3 offset2">
+                        <br/>OR<br/>
+                        </div>
+                        <div class="span3 offset1" align="left">
+	                        <form>
+                          		<br/>
+                              <input type="text" id="inputEmail" class="input-large" placeholder="Email">
+                           
+                          
+                              <input type="password" id="inputPassword" class="input-small" placeholder="Password">
+                              <button type="submit" class="btn btn-primary">Sign Up</button>
+                            
+                         
+                        </form>
+                        </div>
+                    </form>
+              </div>                  
+		   </div>
     
-    	<table width="70%" align="center">
-        	<tr>
-            	
-                <td>
-                	<table width="100%">
-                      <tr>
-                        <td width="200"><input name="username" type="text" class="rounded txtbx-username"></td>
-                        <td width="300" align="center" valign="middle">
-                        	<input type="submit" class="btn btn-primary" name="login_fb" id="login_fb" value="Connect to Facebook"/>                      
-                        </td>
-                      </tr>
-                      <tr>
-                        <td valign="top"><input name="password" type="password" class="rounded txtbx-pwd">&nbsp;
-                        <input name="login" type="button" class="btn btn-primary" value="Sign In">
-                        </td>
-                        <td align="center">OR</td>
-                      </tr>
-                      <tr>
-                        <td valign="top"><a href="#">Forgot Password?</a>
-                        </td>
-                        <td align="center"><input type="submit" class="btn btn-primary" name="login_email" id="login_email" value="Email Id"></td>
-                      </tr>
-                    </table>
-
-                </td>
-            </tr>
-        </table>
-
-</div>
-    <footer style="position:absolute; bottom:0; left:45%">
+    <div style="background-image:url(images/background1.jpg); height:587px">
+        <div class="row-fluid">
+        <div class="span6 offset1" style="margin-top:200px">
+        <h4>Welcome to Make Your Shaadi.</h4>
+		<h5>xxxxx xxxx xxxxx xxxxxxxxxx xxxxxxxxx xxxxxxxxxxxxxx xxxxxxxxxxxxx.</h5>
+        </div>
+        </div>
+    </div>
+    
+    <footer style="position:absolute; bottom:0; left:40%">
         <table width="100%" align="center">
             <tr>
                 <td align="center">
@@ -76,7 +109,9 @@ body,td,th {
                 </td>
             </tr>
         </table>
-	</footer> 
+	</footer>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="css/bootstrap/js/bootstrap.js"></script> 
 </body>
 </html>
 
