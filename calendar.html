@@ -1,0 +1,57 @@
+<!DOCTYPE>
+<html>
+<head>
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<link rel='stylesheet' type='text/css' href='plugins/calendar/full_demo/reset.css' />
+    <link rel='stylesheet' type='text/css' href='plugins/calendar/libs/css/smoothness/jquery-ui-1.8.11.custom.css' />
+	<link rel='stylesheet' type='text/css' href='plugins/calendar/jquery.weekcalendar.css' />
+	<link rel='stylesheet' type='text/css' href='plugins/calendar/full_demo/demo.css' />
+	<link rel='stylesheet' type='text/css' href='plugins/calendar/skins/default.css' />
+    
+    <script type='text/javascript' src='plugins/calendar/libs/jquery-1.4.4.min.js'></script>
+    <script type='text/javascript' src='plugins/calendar/libs/jquery-ui-1.8.11.custom.min.js'></script>
+	<script type="text/javascript" src="http://jqueryui.com/themeroller/themeswitchertool/"></script>
+    <script>
+	  $(document).ready(function(){
+	    $('#switcher').themeswitcher();
+	  });
+    </script>
+	<script type="text/javascript" src="plugins/calendar/libs/date.js"></script>
+	<script type='text/javascript' src='plugins/calendar/jquery.weekcalendar.js'></script>
+	<script type='text/javascript' src='plugins/calendar/full_demo/demo.js'></script>
+
+</head>
+<body> 
+	<!--script src="http://code.jquery.com/jquery-latest.js"></script-->
+    <h1>Select your events</h1>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+	<div id="switcher"></div>
+    <br/>
+	<div id='calendar'></div>
+	<div id="event_edit_container">
+		<form>
+			<input type="hidden" />
+			<ul>
+				<li>
+					<span>Date: </span><span class="date_holder"></span> 
+				</li>
+				<li>
+					<label for="start">Start Time: </label><select name="start"><option value="">Select Start Time</option></select>
+				</li>
+				<li>
+					<label for="end">End Time: </label><select name="end"><option value="">Select End Time</option></select>
+				</li>
+				<li>
+					<label for="title">Title: </label><input type="text" name="title" />
+				</li>
+				<li>
+					<label for="body">Body: </label><textarea name="body"></textarea>
+				</li>
+			</ul>
+		</form>
+	</div>
+	
+	
+</body>
+</html>
