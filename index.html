@@ -2,41 +2,41 @@
 <html>
 <head>
 <title>Homepage - Make Your Shaadi</title>
-<link rel="stylesheet" href="css/bootstrap/css/bootstrap.css" />
-<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" />
-<link rel="stylesheet" href="css/bootstrap/css/bootstrap-responsive.css"/>
-<link rel="stylesheet" href="css/bootstrap/css/bootstrap-responsive.min.css"/>
-<link rel="stylesheet" href="css/stylesheet.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="css/stylesheet.css" rel="stylesheet">
+<link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
 
-<style type="text/css">
-body,td,th {
-	font-family: Calibri;
-	font-size: 14px;
-}	
-
-body {
-	background-image: url(images/background1.jpg);
-}
+<style type="text/css" media="screen">
+	  
+      body {
+        padding-top: 80px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
 </style>
-
+<meta charset="utf-8">
 </head>
 <body>
-	<div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script> 
+	<div class="navbar navbar-inverse navbar-fixed-top" >
+      <div class="navbar-inner" style="min-height:60px;">
         <div class="container">
-          <a class="brand" style="color:#FFFFFF; font-family: SOUCISAN;" href="#">Make Your Shaadi</a>
-          <div class="nav-collapse collapse pull-right" style="margin-top:12px">
-          		<button type="button" class="btn" data-toggle="modal" data-target="#login">Log In</button>
+          <div class="pull-left">
+              <a class="brand fontface" style="color:#FFFFFF; font-size:46px;" href="#">Make Your Shaadi</a>
+          </div>
+          <div class="nav-collapse collapse pull-right" style="margin-top:16px">
+          		<button type="button" class="btn1" data-toggle="modal" data-target="#login">Log In</button>
                 &nbsp;&nbsp;
-                <button type="button" class="btn" data-toggle="modal" data-target="#myModal">Sign Up</button>
+                <button type="button" class="btn1" data-toggle="modal" data-target="#myModal">Sign Up</button>
           </div>
        </div>
       </div>
     </div>
     		<div class="modal hide fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-              <div class="modal-header">
+              <div class="modal-header" align="center">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h3>Log in to Make Your Shaadi</h3>
+                <h4>Log in to Make Your Shaadi</h4>
               </div>
               <div class="modal-body">
 						<form class="form-horizontal">
@@ -64,26 +64,27 @@ body {
         
         
            <div class="modal hide fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-              <div class="modal-header">
+              <div class="modal-header" align="center">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h3>Sign up for Make Your Shaadi</h3>
+                        <h4>Sign up for Make Your Shaadi</h4>
                       </div>
               <div class="modal-body">
-              			<div class="span3 offset1">
+              			<div align="right" style="width: 260px" class="span3 offset0">
 	                        <button type="submit" class="btn btn-primary">Connect through Facebook</button>
                         </div>
-                        <div class="span3 offset2">
+                        <div align="center" class="span3 offset0 divider" style="width: 320px">
                         <br/>OR<br/>
                         </div>
-                        <div class="span3 offset1" align="left">
+                        <div class="span3 offset0" align="right">
 	                        <form>
                           		<br/>
+							  <input type="text" id="inputName" class="input-large" placeholder="Full Name">
+							  <input type="text" id="inputName" class="input-large" style="border:none;" placeholder="Full Name">
                               <input type="text" id="inputEmail" class="input-large" placeholder="Email">
-                           
-                          
-                              <input type="password" id="inputPassword" class="input-small" placeholder="Password">
+                              <input type="password" id="inputPassword" class="input-large" placeholder="Password">
+							  
                               <button type="submit" class="btn btn-primary">Sign Up</button>
-                            
+							  
                          
                         </form>
                         </div>
@@ -94,7 +95,7 @@ body {
     <div style="background-image:url(images/background1.jpg); height:587px">
         <div class="row-fluid">
         <div class="span6 offset1" style="margin-top:200px">
-        <h4>Welcome to Make Your Shaadi.</h4>
+        <h3>Welcome to Make Your Shaadi.</h3>
 		<h5>xxxxx xxxx xxxxx xxxxxxxxxx xxxxxxxxx xxxxxxxxxxxxxx xxxxxxxxxxxxx.</h5>
         </div>
         </div>
@@ -112,8 +113,7 @@ body {
             </tr>
         </table>
 	</footer>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="css/bootstrap/js/bootstrap.js"></script> 
+    
 </body>
 </html>
 
