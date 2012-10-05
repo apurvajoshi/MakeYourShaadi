@@ -967,8 +967,8 @@ input[type="color"],
 .uneditable-input {
   display: inline-block;
   height: 20px;
-  padding: 4px 6px;
-  margin-bottom: 9px;
+  padding: 5px 5px;
+  margin-bottom: 5px;
   font-size: 14px;
   line-height: 20px;
   color: #555555;
@@ -4185,7 +4185,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .navbar-inner {
-  min-height: 40px;
+  min-height: 80px;
   padding-right: 20px;
   padding-left: 20px;
   background-color: #fafafa;
@@ -4228,11 +4228,11 @@ input[type="submit"].btn.btn-mini {
 .navbar .brand {
   display: block;
   float: left;
-  padding: 10px 20px 10px;
+  padding: 25px 20px 10px;
   margin-left: -20px;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 200;
-  color: #777777;
+  color: #FFFFFF;
   text-shadow: 0 1px 0 #ffffff;
 }
 
@@ -4246,7 +4246,8 @@ input[type="submit"].btn.btn-mini {
 }
 
 .navbar-link {
-  color: #777777;
+  /*color: #777777;*/
+  color:#FFFFFF;
 }
 
 .navbar-link:hover {
@@ -4599,13 +4600,13 @@ input[type="submit"].btn.btn-mini {
 
 .navbar-inverse .navbar-inner {
   background-color: #1b1b1b;
-  background-image: -moz-linear-gradient(top, #222222, #111111);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#222222), to(#111111));
-  background-image: -webkit-linear-gradient(top, #222222, #111111);
-  background-image: -o-linear-gradient(top, #222222, #111111);
-  background-image: linear-gradient(to bottom, #222222, #111111);
+  background-image: -moz-linear-gradient(top, #BF0000, #BF1111);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#BF0000), to(#BF1111));
+  background-image: -webkit-linear-gradient(top, #BF0000, #BF1111);
+  background-image: -o-linear-gradient(top, #BF0000, #BF1111);
+  background-image: linear-gradient(to bottom, #BF0000, #BF1111);
   background-repeat: repeat-x;
-  border-color: #252525;
+  /*border-color: #252525;*/
   filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0);
 }
 
