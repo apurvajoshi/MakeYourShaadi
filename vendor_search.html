@@ -27,8 +27,8 @@
 				</div>
 				<div class="nav-collapse collapse pull-right" style="margin-top:8px">
 					<div class="btn-group">
-						<button class="btn1">Home</button>
-						<button class="btn1 dropdown-toggle" data-toggle="dropdown">
+						<button class="btn-home">Home</button>
+						<button class="btn-arrow dropdown-toggle" data-toggle="dropdown">
                    
 						<span class="caret"></span>
 						</button>
@@ -45,7 +45,7 @@
     </div>
   
 
-	<!--Search Input -->
+	<!--Image Carousel, Search Input -->
 	<div class="row span9 offset2" style="margin-top: 10px;">
 		<!--Image Carousel-->
 		<div id="myCarousel" class="carousel slide">
@@ -80,22 +80,46 @@ Relax. The good news is that you have professionals like us at your disposal to 
 			<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 		</div>
 		
-		<div>	
-			<div class="search-form-actions" align="center">
-			 <h3>What are you looking for?</h3>
-			 <input class="input-medium" type="text" placeholder="Category">
-			 &nbsp;&nbsp;OR&nbsp;&nbsp;
-			 <input class="input-medium" type="text" placeholder="Search">
-			 
-			 <button class="btn btn-primary" type="button">Search</button> 
-			</div> 
+		<div class="row search-form-actions" style="clear: left">	
+			<div>
+				<h3>What are you looking for?</h3>
+				 <!--<input class="input-medium" type="text" placeholder="Category">-->
+				<table width="80%">
+					<tr>
+						<td width="42%" valign="middle">
+							<div class="control-group">               
+								<div class="controls">  
+								  <select id="select01">  
+									<option>Select Vendor Category</option>  
+									<option>Food Caterers</option>  
+									<option>Photographer</option>  
+									<option>Venues</option>  
+									<option>Beautician</option> 
+									<option>Florist</option> 
+									<option>Music(Orchestra)</option>  
+									<option>Hotels</option> 
+									<option>Transportation</option>  
+								  </select>  
+								</div>  
+							</div>
+						</td>
+						<td width="5%">
+							<h5>OR</h5>
+						</td>
+						<td width="53%" align="right" valign="top">
+							<input class="input-large" type="text" placeholder="Search Vendor">
+							<button class="btn btn-primary" type="button">Search</button>
+						</td>
+					</tr>
+				</table>
+			</div>
 		</div>
 	</div>
 	
 	<!-- Search Filters, Search results and Sponsored Links-->
-	<div class="row" style="margin-left: 40px; margin-top: 10px; clear: left">
+	<div class="row" style="margin-left: 25px; margin-top: 10px; clear: left">
 		<!-- Search Filters-->
-		<div class="span1">
+		<div class="span_n2" >
 			<h5 style="margin-left: 70px">Budget</h5>
 			<div class="btn-group" data-toggle="buttons-checkbox">
 			  <button class="btn">$</button>
@@ -112,50 +136,87 @@ Relax. The good news is that you have professionals like us at your disposal to 
 		</div>
 		
 		<!-- Search results-->
-		<div class="span9">
+		<div class="span8 result-border">
+			
 			<!-- Result 1-->
 			<div class="row">
-				<div class="span2 offset1" >
-					<img class="img-polaroid img-margin" src="http://placehold.it/140x140" alt="">
+				<div class="span2" >
+					<img class="img-polaroid img-margin" src="images/vendors/1.jpg" alt="">
 				</div>
-				<div class="offset3">
+				<div class="offset2">
 					<h4 class="h4 small">Creative Chisel</h4>
 					#12 MG Road Bangalore 560001<br/>
 					+91-78999-18999<br/>
 					<a href="" >www.weddings.creativechisel.com</a><br/>
 					<div style="margin: 10px 0;">
-					<i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-empty"></i>
-					<button class="btn btn-info pull-right" type="button"><i class="icon-comment"></i>&nbsp;&nbsp;Comments</button> 
+						<table width="95%">
+							<tr>
+								<td width="25%">
+									<i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-empty"></i>
+								</td>
+								<td width="40%" align="center">
+									<button class="btn btn-info" type="button"><i class="icon-comment icon-white"></i>&nbsp;&nbsp;Comments</button> 
+								</td>
+								<td width="40%" align="right">
+									<button class="btn btn-primary" type="button">Add to my Event</button>
+								</td>
+							</tr>
+						</table>
 					</div>
 				</div>
 			</div>
-			<div align="right">
+			<div align="center">
 				<hr class="srch_divider"/>
 			</div>
 			
 			<!-- Result 2-->
 			<div class="row">
-				<div class="span2 offset1">
-					<img class="img-polaroid img-margin" src="http://placehold.it/140x140" alt="">
+				<div class="span2" >
+					<img class="img-polaroid img-margin" src="images/vendors/2.gif" alt="">
 				</div>
-				<div class="offset3">
-					<h4 class="h4 small">Rajesh Wedding Photography</h4>
+				<div class="offset2">
+					<h4 class="h4 small">Rajesh Pandey Photography</h4>
 					1914 5th Cross 6th Block Kormangala Bangalore 560034<br/>
 					+91-96454-34584<br/>
-					<a href="">www.wedding-photography.com</a><br/>
+					<a href="" >www.wedding-photography.com</a><br/>
 					<div style="margin: 10px 0;">
-					<i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-empty"></i><i class="icon-star-empty"></i>
-					<button class="btn btn-info pull-right" type="button"><i class="icon-comment"></i>&nbsp;&nbsp;Comments</button> 
+						<table width="95%">
+							<tr>
+								<td width="25%">
+									<i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-empty"></i>
+								</td>
+								<td width="40%" align="center">
+									<button class="btn btn-info" type="button"><i class="icon-comment icon-white"></i>&nbsp;&nbsp;Comments</button> 
+								</td>
+								<td width="40%" align="right">
+									<button class="btn btn-primary" type="button">Add to my Event</button>
+								</td>
+							</tr>
+						</table>
 					</div>
 				</div>
 			</div>
-			<div align="right">
+			<div align="center">
 				<hr class="srch_divider"/>
 			</div>
+			
+			
+			<div class="pagination pagination-centered">
+			  <ul>
+				<li class="disabled"><a href="#"><<</a></li>
+				<li class="active"><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">>></a></li>
+			  </ul>
+			</div>
+			
+			
+			
 		</div>
 		
 		<!-- Sponsored Links-->
-		<div class="span2">
+		<div class="span_n2">
 			<small>
 			Sponsored Links:
 			</small>
@@ -194,14 +255,12 @@ Relax. The good news is that you have professionals like us at your disposal to 
 					Creative Light
 				</div>
 			</div>
-			<div align="right">
-				<hr class="spnlnks_divider"/>
-			</div>
+			
 			
 		</div>
 	</div>
 	
-	<br/><br/><br/><br/>
+	<br/>
 	<footer style="bottom:0; left:40%">
         <table width="100%" align="center">
             <tr>
