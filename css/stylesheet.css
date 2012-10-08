@@ -14,6 +14,34 @@
 
 a.fontface {font: 60px/68px 'SouciSansRegular', Calibri, sans-serif;letter-spacing: 0;}
 
+.search-form-actions {
+  padding: 0px 10px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /*background-color: #f5f5f5;*/
+  background-color: #EEEEEE;
+  border-top: 1px solid #e5e5e5;
+  *zoom: 1;
+}
+
+.srch_divider {
+	width: 740px;
+}
+
+.spnlnks_divider {
+	width: 170px;
+}
+.img-margin {
+	margin-left: 30px;
+}
+
+.ad_img-margin {
+	margin-left: 0px;
+}
+.ad_desc_margin {
+	margin-left: 3px;
+}
+
 .btn1 {
 	height: 38px;
   display: inline-block;
