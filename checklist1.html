@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+  <html>
+   <head>
+      <title>Make Your Shaadi!</title>
+      <!-- Bootstrap -->
+	        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="css/stylesheet.css" rel="stylesheet">
+<link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="plugins/datepicker/css/datepicker.css" rel="stylesheet">
+	  <link rel="stylesheet" href="plugins/todo/base.css">
+	<link rel="stylesheet" href="plugins/todo/app.css">
+	  <style type="text/css" media="screen">
+	  
+      body {
+        padding-top: 40px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+</style>
+    </head>
+    
+<body>
+
+	<div class="navbar navbar-inverse navbar-fixed-top" >
+		<div class="navbar-inner" style="min-height: 40px;">
+			<div class="container">
+				<div class="pull-left">
+					<a class="brand fontface" style="color:#FFFFFF; font-size:30px;margin-top: 2px" href="#">Make Your Shaadi</a>
+				</div>
+				<div class="nav-collapse collapse pull-right" style="margin-top:1px">
+					<div class="btn-group">
+						<button class="btn-home">Home</button>
+						<button class="btn-arrow dropdown-toggle" data-toggle="dropdown">
+                   
+						<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+						<li><a href="#">Account settings</a></li>
+						<li><a href="#">Help</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Logout</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+	
+<div class="row" style="margin-left: 170px;width: 85%">
+	<div class="row checklist-header">	
+		<!--<div class="row">-->
+			<div class="span2">
+				<div class="span3">
+					<h4>Wedding Checklist for</h4>
+				</div>
+				<div class="span2" align="center">
+					<h4 class="italics">Sushil Rangarajan</h4>
+					<h4 class="italics" style="color: #000;">weds <br/></h4>
+					<h4 class="italics">Sheela Desai</h4>
+				</div>
+			</div>
+			<div align="center" style="width: 280px;" class="span2 offset1">
+				<div style="margin-top: 20px; background-color:#FFF;" class="img-rounded">
+				<h5 style="color: #006400;">Wedding Date: 24th December 2012</h5>
+				</div>
+			</div>
+			<div align="center" style="width: 130px;" class="span2 offset1">
+				<div style="margin-top: 20px; background-color:#FFF;" class="img-rounded">
+				<h5 style="color: #006400;">Completed Tasks</h5>
+				12
+				</div>
+			</div>
+			<div align="center" style="width: 180px;" class="offset4">
+				<div style="margin-top: 70px;margin-left: 50px; background-color:#FFF;" class="img-rounded">
+				<h5 style="color: #FF0000;">Remaining Tasks</h5>
+				12
+				</div>
+			</div>
+		</div>
+	<!--<div>-->	
+	
+	<div align="center"  class="offset6 span2 checklist-ticker" style="margin-top: -160px; height: 150px;">
+			<br/>Ticker Placeholder
+			
+	</div>
+	
+</div>
+	
+	<div style="margin-top:25px; margin-left: 170px;width: 85%">
+		<h5>Filter Tasks by:</h5>
+		<div class="btn-group" data-toggle="buttons-checkbox">
+			  <button class="btn">To Do</button>
+			  <button class="btn">Completed</button>
+		</div>
+	</div>
+
+	<div class="row" style="margin-top:25px; margin-left: 140px;">
+		<div>
+			<section id="todoapp" style="width: 800px;">
+				<header id="header">
+					<input id="new-todo" placeholder="What needs to be done?" autofocus>
+				</header>
+				<section id="main">
+					<label for="toggle-all">Mark all as complete</label>
+					<ul id="todo-list"></ul>
+				</section>
+				<footer id="footer">
+					<span id="todo-count"><strong>0</strong> item left</span>
+					<button id="clear-completed">Clear completed</button>
+				</footer>
+			</section>
+		</div>
+		
+		<div align="left" class="offset8 span2" style="position: absolute; margin-top: -80px;">
+			<small>
+			Sponsored Links:
+			</small>
+			<!-- Adv 1-->
+			<div class="row">
+				<div class="span1">
+					<img class="img-polaroid ad_img-margin" src="images/vendors/ph.gif" alt="">
+				</div>
+				<div style="margin-left: 120px">
+					<small>Indian Wedding Photographer</small>
+				</div>
+			</div>
+			<div>
+				<hr class="spnlnks_divider"/>
+			</div>
+			
+			<!-- Adv 2-->
+			<div class="row">
+				<div class="span1">
+					<img class="img-polaroid ad_img-margin" src="images/vendors/ph.gif" alt="">
+				</div>
+				<div style="margin-left: 120px">
+					<small>Nikhil Wedding Photography</small>
+				</div>
+			</div>
+			<div>
+				<hr class="spnlnks_divider"/>
+			</div>
+			
+			<!-- Adv 3-->
+			<div class="row">
+				<div class="span1">
+					<img class="img-polaroid ad_img-margin" src="images/vendors/ph.gif" alt="">
+				</div>
+				<div style="margin-left: 120px">
+					<small>Creative Light</small>
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
+
+	
+
+	
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+
+	<script id="todo-template" type="text/x-handlebars-template">
+	{{#this}}
+	<li {{#if completed}}class="completed"{{/if}} data-id="{{id}}">
+		<div class="view">
+			<input class="toggle" type="checkbox" {{#if completed}}checked{{/if}}>
+			<label>{{title}}</label>
+			<button class="destroy"></button>
+		</div>
+		<input class="edit" value="{{title}}">
+	</li>
+	{{/this}}
+	</script>
+	<script id="footer-template" type="text/x-handlebars-template">
+	<span id="todo-count"><strong>{{activeTodoCount}}</strong> {{activeTodoWord}} left</span>
+	{{#if completedTodos}}<button id="clear-completed">Clear completed ({{completedTodos}})</button>{{/if}}
+	</script>
+	<script src="plugins/todo//base.js"></script>
+	<script src="plugins/todo/jquery.min.js"></script>
+	<script src="plugins/todo/handlebars.min.js"></script>
+	<script src="plugins/todo/app.js"></script>
+
+  </body>
+  </html>
