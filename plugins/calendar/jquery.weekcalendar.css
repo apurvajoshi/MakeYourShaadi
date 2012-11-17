@@ -1,3 +1,19 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+#event_edit_container {
+	display: none;
+}
+
+.ui-state-default{
+    border: 1px solid #D3D3D3;
+}
+
+
+
 .wc-container {
   font-size: 14px;
   font-family: arial, helvetica;
@@ -95,8 +111,11 @@ table.wc-time-slots {
 }
 .wc-day-column-header{border-width: 0 0 1px 3px; border-style: solid;border-color:transparent;}
 .wc-scrollable-grid .wc-day-column-last,
-.wc-scrollable-grid .wc-day-column-middle{border-width: 0 0 0 1px; border-style: dashed;}
-.wc-scrollable-grid .wc-day-column-first{border-width: 0 0 0 3px; border-style: double;}
+.wc-scrollable-grid .wc-day-column-middle{}
+.wc-scrollable-grid .wc-day-column-first{}
+
+/*.wc-scrollable-grid .wc-day-column-middle{border-style: dashed;}
+.wc-scrollable-grid .wc-day-column-first{border-style: double;}*/
 
 .wc-day-column-inner {
     width: 100%;
@@ -142,7 +161,7 @@ table.wc-time-slots {
 .wc-header .wc-user-header{border-width:0;}
 
 .wc-time-slots .wc-day-column.ui-state-default{background:transparent;}
-.wc-time-slots .wc-today.ui-state-active{background-image:none;}
+.wc-time-slots .wc-today.ui-state-active{background-image:none; background-color: #FFFFCC}
 .wc-header .wc-today.ui-state-active.wc-day-column-middle{border-width:0;}
 .wc-header .wc-today.ui-state-active.wc-day-column-first{border-left-width:3px;}
 .wc-header .wc-today.ui-state-active.wc-day-column-last{border-right-width:3px;}

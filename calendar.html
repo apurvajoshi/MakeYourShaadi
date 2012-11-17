@@ -1,34 +1,71 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 <head>
-	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+	<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="css/stylesheet.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+      
+	<!--link rel='stylesheet' type='text/css' href='plugins/calendar/full_demo/reset.css' />
+    <!--link rel='stylesheet' type='text/css' href='plugins/calendar/libs/css/smoothness/jquery-ui-1.8.11.custom.css' /-->	
+    <link rel='stylesheet' type='text/css' href='plugins/calendar/jquery.weekcalendar.css' />
+	<!--link rel='stylesheet' type='text/css' href='plugins/calendar/full_demo/demo.css' />
+	<link rel='stylesheet' type='text/css' href='plugins/calendar/skins/default.css' /-->
 
-	<link rel='stylesheet' type='text/css' href='plugins/calendar/full_demo/reset.css' />
-    <link rel='stylesheet' type='text/css' href='plugins/calendar/libs/css/smoothness/jquery-ui-1.8.11.custom.css' />
-	<link rel='stylesheet' type='text/css' href='plugins/calendar/jquery.weekcalendar.css' />
-	<link rel='stylesheet' type='text/css' href='plugins/calendar/full_demo/demo.css' />
-	<link rel='stylesheet' type='text/css' href='plugins/calendar/skins/default.css' />
-    
+    <style type="text/css" media="screen">
+	 	body {
+    		padding-top: 40px; /* 60px to make the container go all the way to the bottom of the topbar */
+      	}
+	</style>
+      
     <script type='text/javascript' src='plugins/calendar/libs/jquery-1.4.4.min.js'></script>
-    <script type='text/javascript' src='plugins/calendar/libs/jquery-ui-1.8.11.custom.min.js'></script>
-	<script type="text/javascript" src="http://jqueryui.com/themeroller/themeswitchertool/"></script>
     <script>
-	  $(document).ready(function(){
-	    $('#switcher').themeswitcher();
-	  });
-    </script>
-	<script type="text/javascript" src="plugins/calendar/libs/date.js"></script>
+    	var $ = jQuery.noConflict();
+	</script> 
+    
+	<script type='text/javascript' src='plugins/calendar/libs/jquery-ui-1.8.11.custom.min.js'></script>
+    <script type="text/javascript" src="plugins/calendar/libs/date.js"></script>
 	<script type='text/javascript' src='plugins/calendar/jquery.weekcalendar.js'></script>
 	<script type='text/javascript' src='plugins/calendar/full_demo/demo.js'></script>
-
-</head>
-<body> 
-	<!--script src="http://code.jquery.com/jquery-latest.js"></script-->
-    <h1>Select your events</h1>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+    var jq17 = jQuery.noConflict();
+	</script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-	<div id="switcher"></div>
-    <br/>
+    
+</head>
+
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top" >
+		<div class="navbar-inner" style="min-height: 40px;">
+			<div class="container">
+				<div class="pull-left">
+					<a class="brand fontface" style="color:#FFFFFF; font-size:30px;margin-top: 2px" href="#">Make Your Shaadi</a>
+				</div>
+				<div class="nav-collapse collapse pull-right" style="margin-top:1px">
+					<div class="btn-group">
+						<button class="btn-home">Home</button>
+						<button class="btn-arrow dropdown-toggle" data-toggle="dropdown">
+                   
+						<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+						<li><a href="#">Account settings</a></li>
+						<li><a href="#">Help</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Logout</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+    <p class="lead">Now lets start plannig your weeding week! Create and organize events on calendar</p>
+
 	<div id='calendar'></div>
+    
 	<div id="event_edit_container">
 		<form>
 			<input type="hidden" />
@@ -51,7 +88,6 @@
 			</ul>
 		</form>
 	</div>
-	
 	
 </body>
 </html>
