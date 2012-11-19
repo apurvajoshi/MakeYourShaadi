@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Make Your Shaadi</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag	 "/css/stylesheet.css" %>
+  <%= stylesheet_link_tag	 "/bootstrap/css/bootstrap.css" %>
+  <%= stylesheet_link_tag	 "/bootstrap/css/bootstrap.min.css" %>
+  <%= stylesheet_link_tag	 "/bootstrap/css/bootstrap-responsive.css" %>
+  <%= stylesheet_link_tag	 "/bootstrap/css/bootstrap-responsive.min.css" %>
+  <%= javascript_include_tag "/bootstrap/js/bootstrap.js" %>
+  <%= javascript_include_tag "http://code.jquery.com/jquery-latest.js" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+
+</body>
+</html>

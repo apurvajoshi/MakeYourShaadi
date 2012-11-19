@@ -1,0 +1,65 @@
+<!-- Search Filters, Search results and Sponsored Links-->
+<div class="row" style="margin-top: 10px; clear: left;">
+		<!-- Search Filters-->
+		<div class="span_n2" style="margin-left: 5%" align="right" >			
+			<h5>Budget</h5>
+			<div class="btn-group" data-toggle="buttons-checkbox">
+			  <button class="btn">$</button>
+			  <button class="btn">$$</button>
+			  <button class="btn">$$$</button>
+			</div>
+			<br/>
+			<h5 style="margin-left: 70px">Location</h5>
+				<input style="width: 125px" class="input-small" type="text">
+			<br/>
+			<h5 style="margin-left: 70px">Pincode</h5>
+				<input style="width: 125px" class="input-small" type="text">
+		</div>
+		
+		<!-- Search results-->
+		<div class="span_n3 result-border">
+			
+			<% for vendor in @vendors %>
+			<!-- Result 1-->
+			<div class="row">
+				<div class="span2" >
+					<img class="img-polaroid img-margin" src="images/vendors/1.jpg" alt="">
+				</div>
+				<div class="offset2">
+					<h4 class="h4 small"><%= vendor.vname %></h4>
+					<%= vendor.vaddress %><br/>
+					<%= vendor.vphonenumber %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/><%= vendor.vemailid %><br/>
+					<a href="" ><%= vendor.vwebsite %></a>
+						<table width="95%">
+							<tr>
+								<td width="25%">
+									<i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-empty"></i>
+								</td>								
+								<td width="75%" align="right">
+									<button class="btn btn-info" type="button"><i class="icon-comment icon-white"></i>&nbsp;&nbsp;Reviews</button> 
+									<button class="btn btn-primary" type="button">Add to my Event</button>
+								</td>
+							</tr>
+						</table>
+				</div>
+			</div>
+			<div align="center">
+				<hr class="srch_divider"/>
+			</div>
+				
+			<% end %>
+				
+			
+			<div class="pagination pagination-centered">
+			  <ul>
+				<li class="disabled"><a href="#"><<</a></li>
+				<li class="active"><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">>></a></li>
+			  </ul>
+			</div>
+		</div>
+			
+			
+</div>
