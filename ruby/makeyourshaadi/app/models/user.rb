@@ -1,13 +1,12 @@
 class User < ActiveRecord::Base
-  attr_accessible :emailid, :fullname, :password
-  validates :fullname, presence: true
-  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
-  validates :emailid, presence: true, format: { with: VALID_EMAIL_REGEX }, uniqueness: { case_sensitive: false }
-  validates :password, presence: true
-  
-  private
-
-    def create_remember_token
-      self.remember_token = SecureRandom.urlsafe_base64
+  def self.from_omniauth(auth)
+    where(auth.slice(:provider, :uid)).first_or_initialize.tap do |user|
+      user.provider = auth.provider
+      user.uid = auth.uid
+      user.name = auth.info.name
+      user.oauth_token = auth.credentials.token
+      user.oauth_expires_at = Time.at(auth.credentials.expires_at)
+      user.save!
     end
+  end
 end

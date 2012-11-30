@@ -1,0 +1,26 @@
+<div class="modal hide fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-header" align="center">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4>Sign up for Make Your Shaadi</h4>
+                      </div>
+              <div class="modal-body">
+              			<div align="right" style="width: 260px" class="span3 offset0">
+              				<%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>&nbsp;
+	                     
+                        </div>
+                        <div align="center" class="span3 offset0 divider" style="width: 320px">
+                        <br/>OR<br/>
+                        </div>
+                        <div class="span3 offset0" align="right">
+                        	        
+                        	<%= form_for @normaluser do |f| %>
+                        	      <%= f.text_field :fullname %>
+                        	      <%= f.text_field :email %>
+                        	      <%= f.text_field :passowrd %>
+                        	      <% f.submit() "Sign Up", :class => 'btn btn-primary' %>
+                        	<% end %>                        
+	                        
+                        </div>
+                    </form>
+              </div>                  
+		   </div>

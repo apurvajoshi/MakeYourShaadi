@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  fullname: MyString
+  password: MyString
+  email: MyString
+  weddinglocation: MyString
+  weddingdate: 2012-11-30
+  spousename: MyString
+
+two:
+  fullname: MyString
+  password: MyString
+  email: MyString
+  weddinglocation: MyString
+  weddingdate: 2012-11-30
+  spousename: MyString

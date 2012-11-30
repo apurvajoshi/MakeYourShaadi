@@ -60,8 +60,13 @@ Relax. The good news is that you have professionals like us at your disposal to 
 							<h5>OR</h5>
 						</td>
 						<td width="53%" align="right" valign="top">
-							<input class="input-large" type="text" placeholder="Search Vendor">
-							<button class="btn btn-primary" type="button">Search</button>
+							
+							<%= form_tag vendors_path,:method => 'get', :id => "vendors_search" do %>
+							  <p>
+							    <%= text_field_tag :search, params[:search], :class => 'input-large' %>
+							    <%= submit_tag "Search", :title => nil, :class => 'btn btn-primary' %>
+							  </p>
+							<% end %>
 						</td>
 					</tr>
 				</table>

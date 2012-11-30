@@ -1,15 +1,23 @@
 BootstrapTest::Application.routes.draw do
   get "vendors/vendorsearch"
 
-  get "users/index"
-  root :to => 'Users#index'
+  get "vendor/index"
+
+  root :to => 'home#index'
+  #get "users/index"
+  #root :to => 'users#index'
   
-  resources :users
-  resources :sessions, only: [:new, :create, :destroy]
+  #resources :users
+  #resources :sessions, only: [:new, :create, :destroy]
   resources :vendors
+  resources :userhome
   
-  match '/signin',  to: 'sessions#new'
-  match '/signout', to: 'sessions#destroy', via: :delete
+  match 'auth/:provider/callback', to: 'sessions#create'
+  match 'auth/failure', to: redirect('/')
+  match 'signout', to: 'sessions#destroy', as: 'signout'
+  
+  #match '/signin',  to: 'sessions#new'
+  #match '/signout', to: 'sessions#destroy', via: :delete
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

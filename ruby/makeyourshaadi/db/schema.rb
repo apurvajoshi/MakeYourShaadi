@@ -11,7 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121119101007) do
+ActiveRecord::Schema.define(:version => 20121130154209) do
+
+  create_table "normalusers", :force => true do |t|
+    t.string   "fullname"
+    t.string   "password"
+    t.string   "email"
+    t.string   "weddinglocation"
+    t.date     "weddingdate"
+    t.string   "spousename"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
 
   create_table "products", :force => true do |t|
     t.string   "name"
@@ -21,12 +32,13 @@ ActiveRecord::Schema.define(:version => 20121119101007) do
   end
 
   create_table "users", :force => true do |t|
-    t.string   "fullname"
-    t.string   "emailid"
-    t.string   "password"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
-    t.string   "password_digest"
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "name"
+    t.string   "oauth_token"
+    t.datetime "oauth_expires_at"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
   end
 
   create_table "vendors", :force => true do |t|
